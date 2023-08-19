@@ -1,0 +1,20 @@
+{
+  "name": "appescritorio",
+  "version": "1.0.0",
+  "description": "appescritorio ecomerce",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "electron": "concurrently \"npm run start\" \"cd client && npm run dev\" \"npm run electron-exec\"",
+    "dev": "vite",
+    "build": "vite build",
+    "electron-exec": "electron ."
+  },
+  "author": "Carlos Castellanos",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^26.0.0",
+    "wait-on": "^7.0.1"
+  }
+}
